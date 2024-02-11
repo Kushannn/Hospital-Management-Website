@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Martel+Sans:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Martel+Sans:wght@800&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.navbar{
+    z-index: 10;
+    width: 85%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 205px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 205px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.main{
+  
+    position: relative;
+    z-index: 10;
+}
+
+.lang {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(23, 23, 23, 0.7);
+    filter: blur(50%);
+    padding: 8px 31px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 23px;
+}
+
+.signin {
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    background: rgb(253, 32, 43);
+    border: none;
+    border-radius: 3px;
+    margin-right: 50px;
+}
+
+.main {  
+    background-image: url(images/depositphotos_23829545-stock-photo-medicine-doctor-hand-working-with.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 92vh;
+    position: relative;
+}
+
+.main .box {
+    top: 0;
+    position: absolute;
+    background-color: black;
+    height: 92vh;
+    width: 100%;
+    opacity: 0.44;
+}
+
+.text {
+    /* font-family: 'Martel Sans', sans-serif; */
+    height: 65%;
+    /* height: calc(100%-100px); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    padding: 30px;
+}
+
+.text> :first-child {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(72, 66, 66);
+    width: 100%;
+}
+
+.btn-red {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background: rgb(253, 32, 43);
+    position: relative;
+    z-index: 10;
+    border-radius: 4px;
+    padding: 15px 50px;
+    font-size: 24px;
+}
+
+.email {
+    font-weight: 900px;
+    width: 350px;
+    background-color: rgba(23, 23, 23, 0.7);
+    position: relative;
+    z-index: 10;
+    border-radius: 4px;
+    padding: 15px 15px;
+    font-size: 24px;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 20vw;
+}
+
+.fifth{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 15vh;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text1 :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.text1 :nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.first {
+    padding: 50px 0px;
+}
+
+.secImg {
+    /* padding-top: 50px; */
+    position: relative;
+}
+
+.secImg img {
+    width: 32vw;
+
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    width: 21vw;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.second img {
+    position: relative;
+    z-index: 10;
+    width: 24vw;
+    height:20vw ;
+    padding-left: 20px;
+    padding-right: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.thirdImg img {
+    position: relative;
+    margin-left: 20px;
+}
+
+
+
+.thirdImg img {
+    position: relative;
+    z-index: 10;
+    width: 32vw;
+
+    position: relative;
+    z-index: 10;
+}
+
+.fourth img{
+    padding-right: 70px;
+    padding-left: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    padding: 70px 0px 25px 0px;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+
+.faqbox:hover {
+    background-color: #414141;
+
+}
+
+.faqbox {
+    transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 25px 25px;
+    max-width: 70vw;
+    margin: 10px auto;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.Text2 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.faq {
+    margin-bottom: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    ;
+    max-width: 73vw;
+    margin: auto;
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 70px;
+}
+
+.footer button {
+    margin: 20px 0px 10px 0px;
+    width: 150px;
+}
+
+.Questions {
+    padding: 34px 0;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-items a {
+    color: rgba(255, 255, 255, 0.7);
+    ;
+    font-size: 14px;
+}
+
+footer .buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-top: 15px;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 107vw;
+        justify-content: space-between;
+    }
+    nav .lang{
+        margin-right: 0px;
+    }
+    nav .signin{
+        margin-right: 10px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .text:nth-child(1){
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .text:nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .text:nth-child(3){
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 100px;
+    }
+
+    .text1{
+        padding: 10px 10px 10px 10px;
+    }
+
+    .text1:first-child{
+        font-size: 20px;
+        font-weight:400 ;
+    }
+
+    .text1:nth-child(2){
+        font-size: 10px;
+    }
+
+    .secImg img {
+        width: 380px;
+    }
+
+    .secImg video {
+        width: 265px;
+    }
+
+    .thirdImg img {
+        width: 370px;
+    }
+
+
+    .thirdImg video {
+        width: 223px;
+        position: absolute;
+        top: 25px;
+        right: 71px;
+    }
+
+    .faq h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .faqbox{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .buttons{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
