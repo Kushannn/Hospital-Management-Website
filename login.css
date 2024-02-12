@@ -13,6 +13,7 @@
     background: url(images/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    animation: example 4s ease-in-out infinite;
   }
   .wrapper{
     width: 420px;
@@ -103,3 +104,36 @@
   .register-link p a:hover{
     text-decoration: underline;
   }
+ @keyframes example {
+            0% {
+                background-color: #1A43bf;
+            }
+
+            /* 10%{background-color:aquamarine;}  */
+            10% {
+                background-color: #123499;
+            }
+
+            /* 30%{background-color:aquamarine;}  */
+            20% {
+                background-color: #0a2472;
+            }
+
+            /* 50%{background-color:aquamarine;}  */
+            30% {
+                background-color: #051650;
+            }
+
+            /* 70%{background-color:aquamarine;}  */
+            40% {
+                background-color: #00072d;
+            }
+
+            /* 90%{background-color:aquamarine;}  */
+            50% {
+                background-color: #00072d;
+            }
+
+            100% {
+                background-color: #1A43bf;
+            }
